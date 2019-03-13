@@ -1,0 +1,37 @@
+<!-- html file for the Books adding-->
+
+<div class="Book">
+  <label> {{val}}</label>
+  <label>{{books}}</label>
+  <button style="float: left"  class="button" value="back"><a href="/home">Back</a></button>
+  <form [formGroup] = "bookForm" (ngSubmit) = "onAction()">
+
+
+    <table  cellpadding=5>
+
+
+      <hr><h1>Add Books In to the Library</h1>
+
+      <tr><td>ISBN :  </td>
+        <td><input type=text formControlName="isbn" size=35 placeholder="ISBN" required [(ngModel)]="isbn" ></td></tr>
+      <tr><td>Books Title : </td>
+        <td><input type=text formControlName="title" size=35 placeholder="Title" required [(ngModel)]="title" ></td></tr>
+      <tr><td>Section :</td>
+        <td><input type=text formControlName="section" size=35 placeholder="Book" required [(ngModel)]="Book" ></td></tr>
+      <tr><td>Publication Date :</td>
+        <td><input type=date formControlName="publishedDate" size=35 placeholder="Published Date" required [(ngModel)]="Date" ></td></tr>
+      <tr><td>Author of the Book : </td>
+        <td><input type=text formControlName="author" size=35 placeholder="Author" required [(ngModel)]="Author" ></td></tr>
+      <tr><td>Book's Publisher : </td>
+        <td><input type=text formControlName="publisher" size=35 placeholder="Publisher " required [(ngModel)]="Publisher" ></td></tr>
+      <tr><td>Total Pages : </td>
+        <td><input type=text formControlName="totalPages" size=35 placeholder="Total Pages" required [(ngModel)]="Total_pages" ></td></tr>
+
+      <tr>
+        <td><button type="reset" value='reest' class="button">ReSet</button></td>
+      <td><button  type="submit" class="button" >ADD BOOKS </button></td></tr>
+    </table>
+  </form>
+
+</div>
+

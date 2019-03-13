@@ -1,0 +1,77 @@
+
+
+body {
+  text-align:center;
+  margin: 0;
+
+  background-image: url('https://s3files.core77.com/blog/images/lead_n_spotlight/500807_spotlight_54224_v8dP5xm9M.png');
+
+  font-family: georgia;
+  height: 100%;
+  width: 100%;
+
+}
+html{
+  height: 100%;
+  width: 100%;
+}
+
+label{
+  color: red;
+  font-size: 40px;
+  text-align: left;
+
+
+}
+button{
+  padding: 10px 24px;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button:hover {
+  background-color: blue;
+  color: gold;
+}
+td{
+  text-align: left;
+
+}
+input[type=text], select {
+  width: 70%;
+  padding: 10px 50px;
+  margin: 2px ;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color:whitesmoke;
+
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: whitesmoke;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: whitesmoke;
+}
+h1{
+  font-size: 50px;
+  color:blueviolet;
+}
+td{
+  text-align: left;
+  box-sizing: border-box;
+  color: chartreuse;
+  font-size: 25px;
+  font-family: Calibri;
+
+}

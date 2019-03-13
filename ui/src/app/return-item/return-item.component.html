@@ -1,0 +1,29 @@
+
+<!--Reurn item HTML form-->
+<div class="return">
+  <button style="float: left"  class="button" value="back"><a href="/home">Back</a></button>
+  <form [formGroup]="returnForm" style="text-align: center" (ngSubmit)="onSubmit()" >
+    <hr><h1>Add Item ISBN To Return an Item :</h1>
+
+
+    <tr><td>Item's ISBN : </td>
+      <td><input type=text formControlName="isbn" size=35 placeholder="Item ISBN " required [(ngModel)]="isbn"></td>
+    </tr>
+
+    <tr><td>Id : </td>
+      <td><input type=text formControlName="id" size=35 placeholder="ID" required [(ngModel)]="id"></td></tr>
+
+    <tr><td>Date Return : </td>
+      <td><input type=datetime-local formControlName="date" size=35 placeholder="" required [(ngModel)]="date"></td></tr>
+
+
+    <br>
+    <tr>
+
+      <td><button type="reset" value='reset' class="button">ReSet</button></td>
+
+      <td><button  type="submit" class="button" >Return </button></td></tr>
+
+  </form>
+  <label>{{returnItem}}</label>
+</div>

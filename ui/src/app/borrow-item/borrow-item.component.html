@@ -1,0 +1,35 @@
+
+<!--borrow item form -->
+<div class="borrow">
+  <button style="float: left"  class="button" value="back"><a href="/home">Back</a></button>
+<form [formGroup]="borrowForm" style="text-align: center" (ngSubmit)="onSubmit()" >
+  <hr><h1>Add Item ISBN To borrow an Item :</h1>
+
+<!--this required and ngmode attribute is used to validate the form-->
+  <tr><td>Item's ISBN : </td>
+    <td><input type=text formControlName="isbn" size=35 placeholder="Item ISBN " required [(ngModel)]="isbn"></td>
+   </tr>
+
+  <tr><td>Id : </td>
+    <td><input type=text formControlName="id" size=35 placeholder="ID" required [(ngModel)]="id"></td></tr>
+  <tr><td>Name :  </td>
+    <td><input type=text  formControlName="name" size=35 placeholder="Name" required [(ngModel)]="name" ></td></tr>
+  <tr><td>Email Address : </td>
+    <td><input type=text formControlName="email" size=35 placeholder="Email Address" required [(ngModel)]="email"></td></tr>
+  <tr><td>Mobile no :</td>
+    <td><input type=text formControlName="mobile" size=35 placeholder="Mobile Number" required [(ngModel)]="mobile"></td></tr>
+  <br>
+  <tr><td>Date Borrowing : </td>
+    <td><input type=datetime-local formControlName="date" size=35 placeholder="" required [(ngModel)]="date"></td></tr>
+
+
+  <br>
+  <tr>
+
+    <td><button type="reset" value='reset' class="button">ReSet</button></td>
+
+    <td><button  type="submit" class="button" >Borrow </button></td></tr>
+
+</form>
+  <label>{{borrowItem}}</label> <!--this variable will shpw the message from the backend-->
+  </div>

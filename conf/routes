@@ -1,0 +1,51 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Serve index page from public directory
+GET     /                        controllers.FrontendController.index()
+
+# An example route (Prefix all API routes with apiPrefix defined in application.conf)
+#GET     /api/summary                controllers.LibraryControllerler.appSummary
+
+# Serve static assets under public directory
+GET     /*file                      controllers.FrontendController.assetOrDefault(file)
+
+# Test post request
+#POST    /api/postTest               controllers.LibraryControllerler.postTest()
+
++nocsrf
+POST    /api/count                   controllers.LibraryController.Count()
+
+
++nocsrf
+POST    /api/add                    controllers.LibraryController.Book()
+
+
+
+
++nocsrf
+POST    /api/dvd                   controllers.LibraryController.Dvd()
+
++nocsrf
+POST    /api/delete                 controllers.LibraryController.Del()
+
++nocsrf
+POST    /api/borrow                 controllers.LibraryController.BorrowItem()
+
+
++nocsrf
+POST    /api/return                controllers.LibraryController.Rest()
+
+
+
++nocsrf
+POST   /api/view                  controllers.LibraryController.View()
+
++nocsrf
+POST    /api/count1                   controllers.LibraryController.Count1()
+
++nocsrf
+POST   /api/search                  controllers.LibraryController.Search()
++nocsrf
+POST   /api/report                 controllers.LibraryController.Report()

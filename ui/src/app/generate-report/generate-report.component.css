@@ -1,0 +1,15 @@
+td{
+  text-align: left;
+  width: 30%;
+  color: chartreuse;
+  font-size: large;
+  font-color: blue;
+}
+td, th {
+  border: 2px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+.table{
+  align-content: center;
+}

@@ -1,0 +1,35 @@
+<div class="DVD">
+  <label> {{val}}</label>
+  <label>{{dvds}}</label>
+  <button style="float: left"  class="button" value="back"><a href="/home">Back</a></button>
+  <form [formGroup] = "dvdForm" (ngSubmit) = "onAction()">
+
+
+    <table  cellpadding=5>
+
+
+      <hr><h1>Add DVD's In to the Library</h1>
+
+      <tr><td>ISBN :  </td>
+        <td><input type=text  formControlName="isbn" size=35 placeholder="ISBN" required [(ngModel)]="isbn"></td></tr>
+      <tr><td>Movie Title : </td>
+        <td><input type=text formControlName="title" size=35 placeholder="Title" required [(ngModel)]="title"></td></tr>
+      <tr><td>Section :</td>
+        <td><input type=text formControlName="section" size=35 placeholder="Section DVD/BOOK" required [(ngModel)]="section"></td></tr>
+      <tr><td>Available Languages :</td>
+        <td><input type=text formControlName="languages" size=35 placeholder="Available Languages" required [(ngModel)]="languages"></td></tr>
+      <tr><td>Available Subtitles : </td>
+        <td><input type=text formControlName="subtitles" size=35 placeholder="Available Subtitle" required [(ngModel)]="subtitles"></td></tr>
+      <tr><td>Producer : </td>
+        <td><input type=text formControlName="producer" size=35 placeholder="Producer " required [(ngModel)]="producer"></td></tr>
+      <tr><td>Actors : </td>
+        <td><input type=text formControlName="actors" size=35 placeholder="Actors" required [(ngModel)]="actors"></td></tr>
+
+      <tr>
+        <td><button type="reset" value='reest' class="button">ReSet</button></td>
+        <td><button  type="submit" class="button" >ADD DVD </button></td></tr>
+    </table>
+  </form>
+
+</div>
+

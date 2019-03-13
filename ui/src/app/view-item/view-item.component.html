@@ -1,0 +1,29 @@
+<button style="float: left"  class="button" value="back"><a href="/home">Back</a></button>
+
+  <h1> View Items</h1>
+<label>{{searchItems}}</label>
+<br>
+<form [formGroup]="search" (ngSubmit)="onSubmit()">
+ <label>Search :</label>
+    <input type=text formControlName="title" size=20 placeholder="Title" required [(ngModel)]="title" >
+    <button  type="submit" class="button" >Search </button>
+  </form>
+<br>
+<div class="table">
+<table>
+  <thead>
+  <tr>
+    <td>ISBN</td>
+    <td>title</td>
+    <td>Section</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of viewItem">
+    <td>{{item.isbn}}</td>
+    <td>{{item.title}}</td>
+    <td>{{item.section}}</td>
+  </tr>
+  </tbody>
+</table>
+</div>
